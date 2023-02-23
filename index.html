@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fairies 🧚🏻‍♀️</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+    .content {
+      text-align: center;
+      font-size: 24px;
+    }
+    .img {
+      box-shadow: inset 0 0 25px white;
+      padding: 10px;
+    }
+    .page {
+      width: 800px;
+      margin: auto;
+    }
+    button {
+      font-size: 20px;
+      font-weight: 600;
+      color: #5e63b6;
+      border-width: 5px;
+      border-color: black;
+      border-radius: 5px;
+      padding: 15px;
+      margin: auto;
+      background-color: white;
+      transition: 30ms;
+    }
+    hr {
+      display: block;
+      height: 3px;
+      background-color: black;
+      border: 0;
+    }
+    button:hover {
+      background-color: black;
+      border-color: white;
+      color: #f5c7f7;
+      cursor: pointer;
+    }
+    p {
+      line-height: 40px;
+    }
+    span {
+      font-style: italic;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="page">
+      <div class="content">
+        <h1>Fairy</h1>
+        <hr />
+        <h2>
+          <em>Faerie ~ Sprite ~ Pixie ~ Fae</em>
+        </h2>
+        <hr />
+        <br />
+        <div class="img">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/175361c3-62f5-4727-8a23-aa57af282b0c/dc33xpk-e735b139-9427-48b1-9144-725e07b3c4a4.png/v1/fill/w_1280,h_720,q_80,strp/fairies_by_tjota_dc33xpk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMTc1MzYxYzMtNjJmNS00NzI3LThhMjMtYWE1N2FmMjgyYjBjXC9kYzMzeHBrLWU3MzViMTM5LTk0MjctNDhiMS05MTQ0LTcyNWUwN2IzYzRhNC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.sDBnjG5gnFkDdIJGUqXw7rShqVqnK41mEQi_AqS28VM"
+            width="675"
+          />
+        </div>
+        <p>
+          A mythical being of folklore, fairies are described as winged, magical
+          creatures who usually have a close relationship with nature and
+          humans.
+          <br />
+          <br />
+          While the term <strong>fairy</strong> goes back only to the middle
+          ages in Europe, these beings are described in various forms throughout
+          history in Sanskrit, Greek mythology, Arabic mythology, and stories
+          told by Samoans and indigenous Americans.
+        </p>
+        <p>
+          If you enjoy learning about mythical,
+          <span>fantastical</span> creatures, subscribe to my weekly newsletter.
+        </p>
+        <button>Subscribe</button>
+        <p>
+          To purchase my favorite fairy coloring book, click
+          <a
+            href="https://www.amazon.com/Fairies-Coloring-Book-Beautiful-Relaxing/dp/B0BC4B3DVM?ref_=ast_sto_dp"
+            >here</a
+          >.
+        </p>
+        <hr />
+        <p>
+          This page was coded by
+          <a
+            href="https://www.linkedin.com/in/charlene-parker-a0607825b"
+            target="blank"
+            >Charlene Parker</a
+          >
+        </p>
+        <p>
+          Original art can be found
+          <a
+            href="https://www.deviantart.com/tjota/art/Fairies-730816616"
+            target="blank"
+            >here</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function Subscribe() {
+        let emailAddress = prompt("What is your email address?");
+        if (emailAddress.includes("@") && emailAddress.includes(".")) {
+          alert("Thank you! You are now subscribed.");
+        } else {
+          alert("Error. Email address not valid");
+        }
+      }
+
+      let subscribeButton = document.querySelector("button");
+
+      subscribeButton.addEventListener("click", Subscribe);
+    </script>
+  </body>
+</html>
